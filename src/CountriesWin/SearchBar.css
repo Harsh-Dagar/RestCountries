@@ -57,12 +57,11 @@
 #searcharea input{
     border: none;
     outline: none;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 800;
     margin-left: 10px;
     width: 90%;
     height:auto;
-
     color:black;
 }
 
