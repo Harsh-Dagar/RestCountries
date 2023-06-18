@@ -96,8 +96,11 @@
 #selectRegion{
 
     padding: 10px;
-    border: none;
-    -webkit-padding-start: 10px;
+    border: none; 
+    /* height:20px;
+    
+    color: black; */
+    height: fit-content;
     border-radius: 5px;
     box-shadow: 2px 2px 10px  grey;
 
