@@ -65,4 +65,4 @@ const SearchBar = ({searchByName,searchByRegion}) => {
   )
 }
 
-export default SearchBar
+export default SearchBar;

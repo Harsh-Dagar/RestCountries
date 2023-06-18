@@ -45,9 +45,11 @@
 }
 #searcharea{
     margin: 5px;
+    padding: 10px;
     width: 80%;
     height: 100%;
     display: flex;
+    background: transparent;
     justify-content: center;
     align-items: center;
 

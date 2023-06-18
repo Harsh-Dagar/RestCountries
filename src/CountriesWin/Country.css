@@ -7,6 +7,8 @@ body{
     margin-top: 30px;
     margin-left: 50px;
     margin-bottom: 50px;
+    /* text-decoration: none; */
+    text-decoration-line: none;
 
 }
 @media (max-width:720px) {
