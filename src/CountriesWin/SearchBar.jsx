@@ -26,22 +26,22 @@ const SearchBar = ({searchByName,searchByRegion}) => {
     <div className='SearchBar'>
 
         <form className="searchbar-form" onSubmit={handleSubmit} >
-            {/* <div className="searchbar">
-                <div id="searcharea"> */}
+            <div className="searchbar">
+                <div id="searcharea">
 
                     <label htmlFor="countryname"><i style={{color: "rgba(28, 107, 255, 0.81)"}}
                             className="fa fa-sharp fa-light fa-search"></i></label>
                     <input onChange={handleChange} type="text" name="countryname" id="countryname" value={formData} placeholder="Search for a country..."/>
-                {/* </div> */}
+                </div>
                 <button type="submit">Search</button>
-            {/* </div> */}
+            </div>
         </form>
 
 
 
         <div className="dropdown">
             <div className="dropdown-content">
-                <select onChange={handleFilter} id="select">
+                <select onChange={handleFilter} id="selectRegion">
                     <option  value='All'>Filter By Region: All</option>
 
                     <option value='Africa'>Filter By Region: Africa</option>
