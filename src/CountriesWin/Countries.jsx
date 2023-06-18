@@ -24,10 +24,13 @@ const Countries = () => {
                 let len = name.length;
                 let countryNameLen = val.name.common.length;
                 let i = 0;
+                let str1=val.name.common.toLowerCase();
+                let str2=name.toLowerCase();
                 while (i < len && i < countryNameLen) {
-                    if (name[i] !== val.name.common[i]) {
+                    if (str1[i]!==str2[i]){
                         return false;
                     }
+               
                     i++;
                 }
                 if (i === len) return true;

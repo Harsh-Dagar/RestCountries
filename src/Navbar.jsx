@@ -4,7 +4,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import './Navbar.css';
 
 function Navbar(){
-    const [darkMode,setDarkMode]=useState(1);
+    const [darkMode,setDarkMode]=useState(0);
     // isDarkMode=1;
     function handleClick(){
         setDarkMode((curr)=>{

@@ -13,15 +13,13 @@ const SearchBar = ({searchByName,searchByRegion}) => {
         }
     }
     function handleChange(evnt){
-        if(!evnt.target.value){
-            searchByName(formData);
-        }
-        console.log(evnt.target.value);
+
+        // console.log(evnt.target.value);
         setFormData(evnt.target.value);
     }
 
     function handleFilter(evt){
-        console.log("hello@@@@@",evt.target.value);
+        // console.log("hello@@@@@",evt.target.value);
         searchByRegion(evt.target.value)
     }
   return (
