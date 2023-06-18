@@ -12,6 +12,12 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+@media (max-width:500px) {
+    .Navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 .ModeIcon{
     display: flex;
     align-items: center;

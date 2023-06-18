@@ -40,7 +40,7 @@ const SearchBar = ({searchByName,searchByRegion}) => {
 
 
         <div className="dropdown">
-            <div className="dropdown-content">
+  
                 <select onChange={handleFilter} id="selectRegion">
                     <option  value='All'>Filter By Region: All</option>
 
@@ -59,7 +59,7 @@ const SearchBar = ({searchByName,searchByRegion}) => {
                     <option value='Oceania'>Filter By Region: Oceania</option>
                 </select>
 
-            </div>
+    
         </div>
     </div>
   )

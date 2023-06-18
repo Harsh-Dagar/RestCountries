@@ -40,13 +40,13 @@
     background-color: white;
     width: 100%;
     margin: 10px 0 10px 0;
-
     border-radius:1em ;
     box-shadow: 2px 2px 10px  grey;
+
 }
 #searcharea{
     margin: 5px;
-    padding: 10px;
+
     width: 80%;
     height: 100%;
     display: flex;
@@ -58,7 +58,7 @@
 #countryname[type=text]{
     border: none;
     outline: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: sans-serif;
     font-weight: 800;
     margin-left: 10px;
@@ -84,42 +84,22 @@
 .dropdown {
     position: relative;
     height:auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     /* min-height: 100px; */
 }
 
 
-.dropdown-content {
-
-    position: relative;
-    border-radius: 10px;
 
 
-    width:100%;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-
-}
-.dropdown-content select{
-
-    width: 100%;
-    padding:10px;
-    border: none;
-
-    border-radius: 10px;
-}
-
-.dropdown-content select option{
-    
-    font-family: sans-serif;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
 #selectRegion{
-    padding-bottom: 5px;
-    padding-top: 5px;
+
+    padding: 10px;
+    border: none;
+    -webkit-padding-start: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px  grey;
 
 }
 
@@ -143,7 +123,8 @@ body[class=DarkMode] #countryname[type=text]{
     
 
 }
-body[class=DarkMode] .dropdown-content select{
+body[class=DarkMode] #selectRegion{
     background-color: var(--article-color);
     color: white;
+    box-shadow: none;
 }
