@@ -4,10 +4,16 @@ body{
 }
 
 .BackButton{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 
+}
+@media (max-width:720px) {
+    .BackButton{
+    margin-left: 30px;
+
+    }
 }
 .CountryDataContainer{
 
@@ -29,7 +35,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 }
 .CountryFlag{
@@ -82,7 +87,7 @@ body{
 }
 .BorderCountryBtn{
     display: inline-block;
-    margin: 8px;
+    margin: 8px 8px 8px 0px;
 }
 .BorderCountryBtn button{
     background-color: rgb(80, 165, 255);

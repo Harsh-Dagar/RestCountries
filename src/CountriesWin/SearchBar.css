@@ -1,6 +1,5 @@
 .SearchBar {
     text-align: center;
-    background-color:  var(--light-mode-background);
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -23,7 +22,7 @@
     
 }
 .searchbar-form{
-    width: 40%;
+    width: 50%;
     margin-bottom: 20px;
 }
 @media (max-width:740px) {

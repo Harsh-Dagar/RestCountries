@@ -3,7 +3,7 @@ body{
     background-color: var(--light-mode-background);
 }
 .Countries{
-    background-color: var(--light-mode-background);
+
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -22,7 +22,35 @@ img{
 body{
   min-height: 100vh;
 }
-.DarkMode{
-  background-color: var(--dark-bg-color);
+
+body {
+  background: linear-gradient(30deg, #f1ddffa0, #e5d0edca, #afd3fcb1, #d2beed83);
+  background-size: 500%;
+  background-position: left;
+  background-attachment: fixed;
+  animation-name: colormovinganimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+}
+@keyframes colormovinganimation {
+  0% {
+    background-position:left;
+  }
+  33% {
+    background-position: right;
+  }
+  /* 66%{
+      background-position: top;
+  } */
+  100%{
+      background-position: top;
+  }
 }
 
+
+.DarkMode{
+  background: none;
+  background-color: var(--dark-bg-color);
+}

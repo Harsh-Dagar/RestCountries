@@ -87,7 +87,7 @@ function Country() {
                                 </div>
 
                                 <div className="CountryInfoBorder">
-                                    <h5>Border Countries:
+                                    <h5>Border Countries:</h5>
                                         {
                                             (countryData[0].borders) ? (
                                                 countryData[0].borders.map((brVal) => {
@@ -100,7 +100,7 @@ function Country() {
                                                     );
                                                 })) : <></>
                                         }
-                                    </h5>
+                                    
                                 </div>
                             </div>
                         </div>
