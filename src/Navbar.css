@@ -1,0 +1,42 @@
+.Navbar{
+ 
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ModeIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    margin: 2px;
+    border-radius: 8px;
+    color: var(--light-mode-text);
+    transition:background-color 0.3s ease-in-out;
+    padding: 5px;
+    cursor: pointer;
+}
+.ModeIcon:hover{
+    background-color: rgba(0, 255, 255, 0.336);
+
+}
+.ModeIcon h4{
+    margin-left: 5px;
+}
+body[class=DarkMode] .Navbar{
+    background-color: var(--article-color);
+    color: var(--text-color);
+}
+
+body[class=DarkMode] .ModeIcon{
+    color:var(--text-color);
+}
+

@@ -1,0 +1,134 @@
+.SearchBar {
+    text-align: center;
+    background-color:  var(--light-mode-background);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 80px;
+
+}
+
+.searchbar-form{
+    width: 40%;
+    margin-bottom: 20px;
+}
+@media (max-width:740px) {
+    .searchbar-form{
+        width: 100%;
+    }
+    
+}
+.searchbar{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    border-radius:1em ;
+    box-shadow: 2px 2px 10px  grey;
+}
+#searcharea{
+    margin: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#searcharea input{
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 800;
+    margin-left: 10px;
+    width: 90%;
+    height: auto;
+    color:black;
+}
+
+.searchbar button{
+    margin: 4px;
+    border-radius: 0.7em;
+    background-color:#0179ff;
+    border:none;
+    font-weight: 700;
+    padding: 0.8em;
+    color: white;
+}
+.dropdown {
+    
+    position: relative;
+    margin-bottom: 10px;
+    height:auto;
+    padding-bottom: 5px;
+}
+.dropdown-button{
+    display: flex;
+    padding:10px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+.dropdown-content select{
+    height: 150px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown-content select option{
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+
+
+body[class=DarkMode] .SearchBar{
+    background-color: var(--dark-bg-color);
+}
+body[class=DarkMode] .searchbar{
+    background-color: var(--article-color);
+    box-shadow: none;
+}
+body[class=DarkMode] .searchbar input::placeholder{
+    background-color: var(--article-color);
+    box-shadow: none;
+    color: var(--text-color);
+}
+body[class=DarkMode] .dropdown-button{
+    background-color: var(--article-color);
+    color: white;
+}

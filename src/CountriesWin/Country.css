@@ -1,0 +1,99 @@
+body{
+    min-height: 100vh;
+    background-color: var(--light-mode-background);
+}
+
+.BackButton{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+
+}
+.CountryDataContainer{
+
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    width: fit-content;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 20px rgba(113, 113, 113, 0.5);
+    border-radius: 20px;
+}
+@media (max-width:720px) {
+    .CountryDataContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+.CountryFlag{
+    margin-bottom: 50px;
+}
+.CountryInfo{
+    height: auto;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:720px) {
+    .CountryInfo{
+        margin:0;
+    }
+}
+.CountryName{
+    color: var(--light-mode-text);
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.CountryInfo2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+@media (max-width:790px) {
+    .CountryInfo2{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+.CountryInfo2 h5{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.CountryInfo2 h5 span{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.CountryInfoBorder h5{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.BorderCountryBtn{
+    display: inline-block;
+    margin: 8px;
+}
+.BorderCountryBtn button{
+    background-color: rgb(80, 165, 255);
+}
+
+body[class=DarkMode] .CountryDataContainer{
+    background-color: var(--article-color);
+    color: white;
+    box-shadow: none;
+}
+
+body[class=DarkMode] .CountryName{
+    color: white;
+}

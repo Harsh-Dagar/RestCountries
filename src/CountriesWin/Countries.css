@@ -1,0 +1,104 @@
+body{
+    min-height: 100vh;
+    background-color: var(--light-mode-background);
+}
+.Countries{
+    background-color: var(--light-mode-background);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+@media (max-width:1200px) {
+    .Countries{
+
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+}
+@media (max-width:899px) {
+    .Countries{
+
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
+@media (max-width:620px) {
+    .Countries{
+        
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .CountryBox{
+        margin: auto;
+    }
+}
+.CountryBox{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: fit-content;
+    height: auto;
+ 
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(113, 113, 113, 0.5);
+    border-radius: 20px;
+    position:relative;
+
+}
+@media (max-width:620px) {
+    .CountryBox{
+        margin-left: auto;
+        margin-right:auto;
+    
+    }
+}
+
+.CountryBoxImage img{
+    border-radius: 20px 20px 0 0;
+
+
+}
+.CountryBoxData{
+    margin: 20px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+
+}
+.CountryBoxData h2{
+    margin-bottom: 15px;
+}
+.CountryBoxData p{
+    margin-bottom: 5px;
+    color:rgb(82, 82, 82);
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.CountryBoxData p span{
+    font-family: sans-serif;
+    color:black;
+    font-weight: 800;
+}
+.VisitBtn{
+    position:absolute;
+    bottom: 20px;
+    left: 30px;
+}
+body[class=DarkMode] .Countries {
+    background-color: var(--dark-bg-color);
+}
+body[class=DarkMode] .CountryBox{
+    background-color: var(--article-color);
+    box-shadow: none;
+}
+body[class=DarkMode] .CountryBoxData h2 {
+    color: var(--text-color);
+}
+body[class=DarkMode] .CountryBoxData p span{
+    color: var(--text-color);
+}
+body[class=DarkMode] .CountryBoxData p{
+    color: var(--text-color);
+}
+    
+    

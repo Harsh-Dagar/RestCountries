@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+  --dark-bg-color: hsl(207, 26%, 17%);
+  --article-color: hsl(209, 22%, 30%);
+  --text-color: hsl(0, 0%, 100%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 3%, 92%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Concert One', cursive;
+
+}
+img{
+  max-width: 100%;
+}
+body{
+  min-height: 100vh;
+}
+.DarkMode{
+  background-color: var(--dark-bg-color);
+}
+
