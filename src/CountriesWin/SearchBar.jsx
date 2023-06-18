@@ -40,24 +40,23 @@ const SearchBar = ({searchByName,searchByRegion}) => {
 
 
         <div className="dropdown">
-            <div className="dropdown-button">Filter By Region </div>
             <div className="dropdown-content">
-                <select onChange={handleFilter} id="select" multiple>
-                    <option  value='All'>All</option>
+                <select onChange={handleFilter} id="select">
+                    <option  value='All'>Filter By Region: All</option>
 
-                    <option value='Africa'>Africa</option>
+                    <option value='Africa'>Filter By Region: Africa</option>
                     
-                    <option value='Americas'>America</option>
+                    <option value='Americas'>Filter By Region: Americas</option>
 
     
-                    <option value='Asia'>Asia</option>
+                    <option value='Asia'>Filter By Region: Asia</option>
 
           
 
-                    <option value='Europe'>Europe</option>
+                    <option value='Europe'>Filter By Region: Europe</option>
 
           
-                    <option value='Oceania'>Oceania</option>
+                    <option value='Oceania'>Filter By Region: Oceania</option>
                 </select>
 
             </div>
